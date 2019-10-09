@@ -1,13 +1,18 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+
 import AdditionalFeature from './AdditionalFeature';
 
-const AdditionalFeatures = props => {
+const AdditionalFeatures = () => {
+  // see Header.js for mapStateToProps function explanation
+  const { additionalFeatures } = useSelector(({additionalFeatures})=>({additionalFeatures}))
+
   return (
     <div className="content">
       <h4>Additional Features</h4>
-      {props.store.length ? (
+      {additionalFeatures.length ? (
         <ol type="1">
-          {props.store.map(item => (
+          {additionalFeatures.map(item => (
             <AdditionalFeature key={item.id} feature={item} />
           ))}
         </ol>
