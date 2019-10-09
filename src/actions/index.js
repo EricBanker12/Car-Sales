@@ -1,2 +1,2 @@
 export { BUY_ITEM, buyItem } from './buyItem'
-// export {} from './removeFeature'
+export { REMOVE_FEATURE, removeFeature } from './removeFeature'
