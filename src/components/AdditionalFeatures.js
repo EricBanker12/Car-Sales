@@ -20,4 +20,5 @@ const AdditionalFeatures = props => {
   );
 };
 
+// see Header.js for mapStateToProps function explanation
 export default connect(({additionalFeatures})=>({additionalFeatures}))(AdditionalFeatures);

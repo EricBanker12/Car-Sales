@@ -9,4 +9,5 @@ const Total = props => {
   );
 };
 
+// see Header.js for mapStateToProps function explanation
 export default connect(({car, additionalPrice})=>({car, additionalPrice}))(Total);

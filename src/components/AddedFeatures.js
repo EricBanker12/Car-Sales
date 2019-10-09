@@ -20,4 +20,5 @@ const AddedFeatures = props => {
   );
 };
 
+// see Header.js for mapStateToProps function explanation
 export default connect(({car})=>({car}))(AddedFeatures);
